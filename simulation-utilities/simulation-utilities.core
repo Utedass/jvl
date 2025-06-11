@@ -1,0 +1,16 @@
+CAPI=2:
+name: jvl:simulation-utilities:sim:0.0.1
+description: Simulation Utilities
+
+filesets:
+  tb:
+    files:
+      - tb/simulation_utilities.vhd
+      - tb/clock.vhd
+    file_type: vhdlSource
+
+targets:
+  default: &default
+    filesets:
+      - tb
+    toplevel: simulation_utilities

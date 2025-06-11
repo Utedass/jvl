@@ -1,0 +1,57 @@
+CAPI=2:
+name: mahdude:examples:tick:1.0.0
+description: Tick tock motherfoker
+
+filesets:
+  rtl:
+    files:
+      - rtl/blinky.vhd
+    file_type: vhdlSource
+
+  tb:
+    files:
+      - tb/blinky_tb.vhd
+    file_type: vhdlSource
+
+  de2-115:
+    files:
+      - targets/de2-115/de2-115.sdc: { file_type: SDC }
+      - targets/de2-115/de2-115.tcl: { file_type: tclSource }
+
+targets:
+  default: &default
+    filesets:
+      - rtl
+    toplevel: blinky
+
+  sim:
+    <<: *default
+    description: Simulate the design
+    filesets_append:
+      - tb
+    toplevel: blinky_tb
+    default_tool: ghdl
+    tools:
+      ghdl:
+        run_options:
+          - --wave=wave.ghw
+    parameters:
+      - pulses=10
+
+  de2-115:
+    <<: *default
+    description: Synthesize for Terasic DE2-115
+    default_tool: quartus
+    filesets_append:
+      - de2-115
+    tools:
+      quartus:
+        family: Cyclone IV E
+        device: EP4CE115F29C7
+    toplevel: blinky
+
+parameters:
+  pulses:
+    datatype: int
+    description: Number of pulses to run in testbench
+    paramtype: generic

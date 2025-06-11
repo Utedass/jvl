@@ -1,0 +1,43 @@
+CAPI=2:
+name: jvl:peripherals:ps2:0.0.1
+description: PS2 resceiver
+
+filesets:
+  rtl:
+    files:
+      - rtl/ps2_receiver.vhd
+    file_type: vhdlSource
+
+  tb:
+    files:
+      - tb/ps2_receiver_tb.vhd
+      - tb/ps2_stimuli.vhd
+    file_type: vhdlSource
+    depend:
+      - jvl:simulation-utilities:sim
+
+targets:
+  default: &default
+    filesets:
+      - rtl
+    toplevel: ps2_receiver
+
+  sim:
+    <<: *default
+    description: Simulate the design
+    filesets_append:
+      - tb
+    toplevel: ps2_receiver_tb
+    default_tool: ghdl
+    tools:
+      ghdl:
+        run_options:
+          - --wave=wave.ghw
+    parameters:
+      - pulses=100
+
+parameters:
+  pulses:
+    datatype: int
+    description: Number of pulses to run in testbench
+    paramtype: generic

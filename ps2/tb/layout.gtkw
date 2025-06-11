@@ -1,0 +1,73 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Jun 11 16:54:44 2025
+[*]
+[dumpfile] "E:\Programmering\FPGA\VHDL\GHDL\trying_fusesoc\build\jvl_peripherals_ps2_0.0.1\sim-ghdl\wave.ghw"
+[dumpfile_mtime] "Wed Jun 11 16:54:13 2025"
+[dumpfile_size] 1838768
+[savefile] "E:\Programmering\FPGA\VHDL\GHDL\trying_fusesoc\jvl\ps2\tb\layout.gtkw"
+[timestart] 0
+[size] 2560 1378
+[pos] -1 -1
+*-36.793659 49884300000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.ps2_receiver_tb.
+[treeopen] top.ps2_receiver_tb.dut.
+[sst_width] 310
+[signals_width] 351
+[sst_expanded] 1
+[sst_vpaned_height] 427
+@28
+top.ps2_receiver_tb.parity_error
+top.ps2_receiver_tb.framing_error
+top.ps2_receiver_tb.ok
+top.ps2_receiver_tb.available
+top.ps2_receiver_tb.ps2_clk_oe
+top.ps2_receiver_tb.ps2_clk_out
+top.ps2_receiver_tb.ps2_clk_in
+top.ps2_receiver_tb.ps2_dat_oe
+top.ps2_receiver_tb.ps2_dat_out
+top.ps2_receiver_tb.ps2_dat_in
+top.ps2_receiver_tb.ps2_clk_in_sync
+top.ps2_receiver_tb.ps2_clk_in_async
+top.ps2_receiver_tb.ps2_dat_in_sync
+top.ps2_receiver_tb.ps2_dat_in_async
+@420
+top.ps2_receiver_tb.num_rising_edges_since_rstn
+top.ps2_receiver_tb.num_rising_edges
+@28
+top.ps2_receiver_tb.rstn
+top.ps2_receiver_tb.clk
+@420
+top.ps2_receiver_tb.running
+@200
+-
+-DUT
+@28
+top.ps2_receiver_tb.dut.i_start_bit_detected
+top.ps2_receiver_tb.dut.i_current_parity_reg
+top.ps2_receiver_tb.dut.i_clk_in_falling_edge_detected
+top.ps2_receiver_tb.dut.i_clk_in_falling_edge_detector_reg
+top.ps2_receiver_tb.dut.i_data_in_delay_reg
+top.ps2_receiver_tb.dut.i_stop_bit
+top.ps2_receiver_tb.dut.i_start_bit
+@29
+top.ps2_receiver_tb.dut.parity_error
+@28
+top.ps2_receiver_tb.dut.framing_error
+top.ps2_receiver_tb.dut.ok
+top.ps2_receiver_tb.dut.available
+top.ps2_receiver_tb.dut.ps2_clk_oe
+top.ps2_receiver_tb.dut.ps2_clk_out
+top.ps2_receiver_tb.dut.ps2_clk_in
+top.ps2_receiver_tb.dut.ps2_dat_oe
+top.ps2_receiver_tb.dut.ps2_dat_out
+top.ps2_receiver_tb.dut.ps2_dat_in
+top.ps2_receiver_tb.dut.rstn
+top.ps2_receiver_tb.dut.clk
+@22
+#{top.ps2_receiver_tb.dut.i_data_in[7:0]} top.ps2_receiver_tb.dut.i_data_in[7] top.ps2_receiver_tb.dut.i_data_in[6] top.ps2_receiver_tb.dut.i_data_in[5] top.ps2_receiver_tb.dut.i_data_in[4] top.ps2_receiver_tb.dut.i_data_in[3] top.ps2_receiver_tb.dut.i_data_in[2] top.ps2_receiver_tb.dut.i_data_in[1] top.ps2_receiver_tb.dut.i_data_in[0]
+#{top.ps2_receiver_tb.dut.i_data_in_reg[10:0]} top.ps2_receiver_tb.dut.i_data_in_reg[10] top.ps2_receiver_tb.dut.i_data_in_reg[9] top.ps2_receiver_tb.dut.i_data_in_reg[8] top.ps2_receiver_tb.dut.i_data_in_reg[7] top.ps2_receiver_tb.dut.i_data_in_reg[6] top.ps2_receiver_tb.dut.i_data_in_reg[5] top.ps2_receiver_tb.dut.i_data_in_reg[4] top.ps2_receiver_tb.dut.i_data_in_reg[3] top.ps2_receiver_tb.dut.i_data_in_reg[2] top.ps2_receiver_tb.dut.i_data_in_reg[1] top.ps2_receiver_tb.dut.i_data_in_reg[0]
+#{top.ps2_receiver_tb.dut.scancode[7:0]} top.ps2_receiver_tb.dut.scancode[7] top.ps2_receiver_tb.dut.scancode[6] top.ps2_receiver_tb.dut.scancode[5] top.ps2_receiver_tb.dut.scancode[4] top.ps2_receiver_tb.dut.scancode[3] top.ps2_receiver_tb.dut.scancode[2] top.ps2_receiver_tb.dut.scancode[1] top.ps2_receiver_tb.dut.scancode[0]
+[pattern_trace] 1
+[pattern_trace] 0
